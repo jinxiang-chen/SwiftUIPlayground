@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		309BEB9229B9AC46005C34E7 /* SwiftUIPlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309BEB9129B9AC46005C34E7 /* SwiftUIPlaygroundApp.swift */; };
-		309BEB9429B9AC46005C34E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309BEB9329B9AC46005C34E7 /* ContentView.swift */; };
+		309BEB9429B9AC46005C34E7 /* GuessMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309BEB9329B9AC46005C34E7 /* GuessMovieView.swift */; };
 		309BEB9629B9AC4A005C34E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 309BEB9529B9AC4A005C34E7 /* Assets.xcassets */; };
 		309BEB9929B9AC4A005C34E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 309BEB9829B9AC4A005C34E7 /* Preview Assets.xcassets */; };
 		309BEBA329B9AC4B005C34E7 /* SwiftUIPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309BEBA229B9AC4B005C34E7 /* SwiftUIPlaygroundTests.swift */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		309BEB8E29B9AC46005C34E7 /* SwiftUIPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		309BEB9129B9AC46005C34E7 /* SwiftUIPlaygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPlaygroundApp.swift; sourceTree = "<group>"; };
-		309BEB9329B9AC46005C34E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		309BEB9329B9AC46005C34E7 /* GuessMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessMovieView.swift; sourceTree = "<group>"; };
 		309BEB9529B9AC4A005C34E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		309BEB9829B9AC4A005C34E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		309BEB9E29B9AC4B005C34E7 /* SwiftUIPlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIPlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +71,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3009E26D29C0B9440068F7C9 /* TodoList */ = {
+			isa = PBXGroup;
+			children = (
+				309BEB9329B9AC46005C34E7 /* GuessMovieView.swift */,
+			);
+			path = TodoList;
+			sourceTree = "<group>";
+		};
 		309BEB8529B9AC46005C34E7 = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +102,8 @@
 		309BEB9029B9AC46005C34E7 /* SwiftUIPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				3009E26D29C0B9440068F7C9 /* TodoList */,
 				309BEB9129B9AC46005C34E7 /* SwiftUIPlaygroundApp.swift */,
-				309BEB9329B9AC46005C34E7 /* ContentView.swift */,
 				309BEB9529B9AC4A005C34E7 /* Assets.xcassets */,
 				309BEB9729B9AC4A005C34E7 /* Preview Content */,
 			);
@@ -257,7 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				309BEB9429B9AC46005C34E7 /* ContentView.swift in Sources */,
+				309BEB9429B9AC46005C34E7 /* GuessMovieView.swift in Sources */,
 				309BEB9229B9AC46005C34E7 /* SwiftUIPlaygroundApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
