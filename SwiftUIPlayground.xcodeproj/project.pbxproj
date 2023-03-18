@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		307636B129C570DA00239DB0 /* ImpressViewWithAdapterLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307636B029C570DA00239DB0 /* ImpressViewWithAdapterLayout.swift */; };
 		309BEB9229B9AC46005C34E7 /* SwiftUIPlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309BEB9129B9AC46005C34E7 /* SwiftUIPlaygroundApp.swift */; };
 		309BEB9429B9AC46005C34E7 /* GuessMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309BEB9329B9AC46005C34E7 /* GuessMovieView.swift */; };
 		309BEB9629B9AC4A005C34E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 309BEB9529B9AC4A005C34E7 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		307636B029C570DA00239DB0 /* ImpressViewWithAdapterLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpressViewWithAdapterLayout.swift; sourceTree = "<group>"; };
 		309BEB8E29B9AC46005C34E7 /* SwiftUIPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		309BEB9129B9AC46005C34E7 /* SwiftUIPlaygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPlaygroundApp.swift; sourceTree = "<group>"; };
 		309BEB9329B9AC46005C34E7 /* GuessMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessMovieView.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				309BEB9329B9AC46005C34E7 /* GuessMovieView.swift */,
+				307636B029C570DA00239DB0 /* ImpressViewWithAdapterLayout.swift */,
 			);
 			path = TodoList;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				307636B129C570DA00239DB0 /* ImpressViewWithAdapterLayout.swift in Sources */,
 				309BEB9429B9AC46005C34E7 /* GuessMovieView.swift in Sources */,
 				309BEB9229B9AC46005C34E7 /* SwiftUIPlaygroundApp.swift in Sources */,
 			);

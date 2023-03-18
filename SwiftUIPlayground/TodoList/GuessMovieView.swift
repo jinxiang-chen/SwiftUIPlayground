@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  SwiftUIPlayground
-//
-//  Created by 陳晉翔 on 2023/3/9.
-//
-
 import SwiftUI
 import AVFoundation
 
@@ -59,7 +52,6 @@ struct GuessMovieView: View {
             }.padding()
                 .background(Color.blue)
                 .cornerRadius(20)
-
         }
         .padding()
     }
