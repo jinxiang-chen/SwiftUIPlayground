@@ -59,9 +59,16 @@ struct BasicImageRow: View {
             Button("Reserve a table") {
                 self.showError.toggle()
             }
-            Button("Mark as favorite") {
-                self.isFavorite.toggle()
+            if isFavorite {
+                Button("Remove from favorites") {
+                    self.isFavorite.toggle()
+                }
+            } else {
+                Button("Mark as favorite") {
+                    self.isFavorite.toggle()
+                }
             }
+            
         }
         .alert("Not yet available", isPresented: $showError) {
             Button("OK") {
@@ -119,8 +126,14 @@ struct FullImageRow: View {
             Button("Reserve a table") {
                 self.showError.toggle()
             }
-            Button("Mark as favorite") {
-                self.isFavorite.toggle()
+            if isFavorite {
+                Button("Remove from favorites") {
+                    self.isFavorite.toggle()
+                }
+            } else {
+                Button("Mark as favorite") {
+                    self.isFavorite.toggle()
+                }
             }
         }
         .alert("Not yet available", isPresented: $showError) {
