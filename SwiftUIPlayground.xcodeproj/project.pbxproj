@@ -17,6 +17,7 @@
 		309BEBAD29B9AC4B005C34E7 /* SwiftUIPlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309BEBAC29B9AC4B005C34E7 /* SwiftUIPlaygroundUITests.swift */; };
 		309BEBAF29B9AC4B005C34E7 /* SwiftUIPlaygroundUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309BEBAE29B9AC4B005C34E7 /* SwiftUIPlaygroundUITestsLaunchTests.swift */; };
 		30BE8CA429C8A90F00289E25 /* SampleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BE8CA329C8A90F00289E25 /* SampleListView.swift */; };
+		8796AD3C29D559C6008DF94F /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8796AD3B29D559C6008DF94F /* Restaurant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		309BEBAC29B9AC4B005C34E7 /* SwiftUIPlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPlaygroundUITests.swift; sourceTree = "<group>"; };
 		309BEBAE29B9AC4B005C34E7 /* SwiftUIPlaygroundUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPlaygroundUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		30BE8CA329C8A90F00289E25 /* SampleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleListView.swift; sourceTree = "<group>"; };
+		8796AD3B29D559C6008DF94F /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +85,6 @@
 				309BEB9329B9AC46005C34E7 /* GuessMovieView.swift */,
 				307636B029C570DA00239DB0 /* ImpressViewWithAdapterLayout.swift */,
 				30BE8CA329C8A90F00289E25 /* SampleListView.swift */,
-				307F595E29CB4BAE00016F43 /* RestaurantListView.swift */,
 			);
 			path = TodoList;
 			sourceTree = "<group>";
@@ -111,6 +112,8 @@
 		309BEB9029B9AC46005C34E7 /* SwiftUIPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				8796AD3A29D559A9008DF94F /* model */,
+				8796AD3929D559A0008DF94F /* view */,
 				3009E26D29C0B9440068F7C9 /* TodoList */,
 				309BEB9129B9AC46005C34E7 /* SwiftUIPlaygroundApp.swift */,
 				309BEB9529B9AC4A005C34E7 /* Assets.xcassets */,
@@ -142,6 +145,22 @@
 				309BEBAE29B9AC4B005C34E7 /* SwiftUIPlaygroundUITestsLaunchTests.swift */,
 			);
 			path = SwiftUIPlaygroundUITests;
+			sourceTree = "<group>";
+		};
+		8796AD3929D559A0008DF94F /* view */ = {
+			isa = PBXGroup;
+			children = (
+				307F595E29CB4BAE00016F43 /* RestaurantListView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		8796AD3A29D559A9008DF94F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				8796AD3B29D559C6008DF94F /* Restaurant.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +295,7 @@
 			files = (
 				30BE8CA429C8A90F00289E25 /* SampleListView.swift in Sources */,
 				307636B129C570DA00239DB0 /* ImpressViewWithAdapterLayout.swift in Sources */,
+				8796AD3C29D559C6008DF94F /* Restaurant.swift in Sources */,
 				309BEB9429B9AC46005C34E7 /* GuessMovieView.swift in Sources */,
 				307F595F29CB4BAE00016F43 /* RestaurantListView.swift in Sources */,
 				309BEB9229B9AC46005C34E7 /* SwiftUIPlaygroundApp.swift in Sources */,
