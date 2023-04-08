@@ -34,8 +34,13 @@ struct RestaurantListView: View {
                 BasicImageRow(
                     restaurant: $restaurants[index]
                 )
-            }.listRowSeparator(.hidden)
-        }.listStyle(.plain)
+            }
+            .onDelete(perform: { indexSet in
+                restaurants.remove(atOffsets: indexSet)
+            })
+            .listRowSeparator(.hidden)
+        }
+        .listStyle(.plain)
     }
 }
 
