@@ -94,23 +94,26 @@ struct BasicImageRow: View {
                     .foregroundColor(.yellow)
             }
         }
-        .onTapGesture {
-            showOptions.toggle()
-        }
-        .confirmationDialog("What do you want to do?", isPresented: $showOptions, titleVisibility: .visible) {
-            Button("Reserve a table") {
+        .contextMenu {
+            // 加入按鈕，文字是訂位，圖片是電話。
+            Button {
                 self.showError.toggle()
-            }
-            if restaurant.isFavorite {
-                Button("Remove from favorites") {
-                    self.restaurant.isFavorite.toggle()
-                }
-            } else {
-                Button("Mark as favorite") {
-                    self.restaurant.isFavorite.toggle()
+            } label: {
+                HStack {
+                    Text("Reserve a table")
+                    Image(systemName: "phone")
                 }
             }
-            
+            // 加入按鈕，文字：當isFavroite是true時Remove from favorite，false是Mark as favorite，圖片是heart
+            Button {
+                self.restaurant.isFavorite.toggle()
+            } label: {
+                HStack {
+                    Text(restaurant.isFavorite ? "Remove from favorite" : "Mark as favorite")
+                    Image(systemName: "heart")
+                }
+            }
+        
         }
         .alert("Not yet available", isPresented: $showError) {
             Button("OK") {
