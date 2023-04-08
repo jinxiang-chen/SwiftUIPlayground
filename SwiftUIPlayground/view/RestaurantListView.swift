@@ -34,6 +34,26 @@ struct RestaurantListView: View {
                 BasicImageRow(
                     restaurant: $restaurants[index]
                 )
+                .swipeActions(
+                    edge: .leading,
+                    allowsFullSwipe: false,
+                    content: {
+                        // 加入按鈕，圖示是愛心，背景是綠色
+                        Button {
+                            restaurants[index].isFavorite.toggle()
+                        } label: {
+                            Image(systemName: "heart")
+                        }
+                        .tint(.green)
+                        // 加入按鈕，圖示是日曆，背景是橘色
+                        Button {
+                            print("Add to calendar")
+                        } label: {
+                            Image(systemName: "calendar")
+                        }
+                        .tint(.orange)
+                    }
+                )
             }
             .onDelete(perform: { indexSet in
                 restaurants.remove(atOffsets: indexSet)
