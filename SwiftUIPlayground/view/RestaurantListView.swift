@@ -113,7 +113,14 @@ struct BasicImageRow: View {
                     Image(systemName: "heart")
                 }
             }
-        
+            Button {
+                self.showOptions.toggle()
+            } label: {
+                HStack {
+                    Text("Share")
+                    Image(systemName: "square.and.arrow.up")
+                }
+            }
         }
         .alert("Not yet available", isPresented: $showError) {
             Button("OK") {
@@ -121,6 +128,19 @@ struct BasicImageRow: View {
             }
         } message: {
             Text("Sorry, this feature is not available yet. Please retry later.")
+        }
+        .sheet(isPresented: $showOptions) {
+            let defaultText = "Just checking in at \(restaurant.name)"
+            // 建立 ActivityView，並且有兩種，一種是分享文字加圖片，另一種是只有分享文字
+            if let imageToShare = UIImage(named: restaurant.image) {
+                ActivityView(
+                    activityItems: [defaultText, imageToShare]
+                )
+            } else {
+                ActivityView(
+                    activityItems: [defaultText]
+                )
+            }
         }
     }
 }
