@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct RestaurantDetailView: View {
-    @Environment(\.presentationMode) var presentationMode
-    
+    @Environment(\.dismiss) private var dismiss
+
     var restaurant: Restaurant
     
     var body: some View {
@@ -39,7 +39,7 @@ struct RestaurantDetailView: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 Button(action: {
-                    presentationMode.wrappedValue.dismiss()
+                    dismiss()
                 }) {
                     Text("\(Image(systemName: "chevron.left")) \(restaurant.name)")
                 }
