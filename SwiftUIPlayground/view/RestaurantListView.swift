@@ -29,38 +29,51 @@ struct RestaurantListView: View {
     ]
 
     var body: some View {
-        List {
-            ForEach(restaurants.indices, id: \.self) { index in
-                BasicImageRow(
-                    restaurant: $restaurants[index]
-                )
-                .swipeActions(
-                    edge: .leading,
-                    allowsFullSwipe: false,
-                    content: {
-                        // 加入按鈕，圖示是愛心，背景是綠色
-                        Button {
-                            restaurants[index].isFavorite.toggle()
+        NavigationStack {
+            List {
+                ForEach(restaurants.indices, id: \.self) { index in
+                    ZStack(alignment: .leading) {
+                        NavigationLink {
+                            RestaurantDetailView(
+                                restaurant: restaurants[index]
+                            )
                         } label: {
-                            Image(systemName: "heart")
+                            EmptyView()
                         }
-                        .tint(.green)
-                        // 加入按鈕，圖示是日曆，背景是橘色
-                        Button {
-                            print("Add to calendar")
-                        } label: {
-                            Image(systemName: "calendar")
-                        }
-                        .tint(.orange)
+                        .opacity(0)
+                        BasicImageRow(restaurant: $restaurants[index])
+                            .swipeActions(
+                                edge: .leading,
+                                allowsFullSwipe: false,
+                                content: {
+                                    // 加入按鈕，圖示是愛心，背景是綠色
+                                    Button {
+                                        restaurants[index].isFavorite.toggle()
+                                    } label: {
+                                        Image(systemName: "heart")
+                                    }
+                                    .tint(.green)
+                                    // 加入按鈕，圖示是日曆，背景是橘色
+                                    Button {
+                                        print("Add to calendar")
+                                    } label: {
+                                        Image(systemName: "calendar")
+                                    }
+                                    .tint(.orange)
+                                }
+                            )
                     }
-                )
+                }
+                .onDelete(perform: { indexSet in
+                    restaurants.remove(atOffsets: indexSet)
+                })
+                .listRowSeparator(.hidden)
             }
-            .onDelete(perform: { indexSet in
-                restaurants.remove(atOffsets: indexSet)
-            })
-            .listRowSeparator(.hidden)
+            .listStyle(.plain)
+            .navigationTitle("FoodPin")
+            .navigationBarTitleDisplayMode(.automatic)
         }
-        .listStyle(.plain)
+        .accentColor(.white)
     }
 }
 
