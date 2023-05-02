@@ -18,8 +18,12 @@
 		309BEBAF29B9AC4B005C34E7 /* SwiftUIPlaygroundUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309BEBAE29B9AC4B005C34E7 /* SwiftUIPlaygroundUITestsLaunchTests.swift */; };
 		30BE8CA429C8A90F00289E25 /* SampleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BE8CA329C8A90F00289E25 /* SampleListView.swift */; };
 		8759980929E15DF9002949FB /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8759980829E15DF9002949FB /* ActivityView.swift */; };
+		875AF0B829FF52370056021D /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875AF0B729FF52370056021D /* UIColorExt.swift */; };
+		876702C22A015773004D8208 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876702C12A015773004D8208 /* MapView.swift */; };
 		876A74B029E5ABE200A46C8C /* RestaurantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A74AF29E5ABE200A46C8C /* RestaurantDetailView.swift */; };
 		8796AD3C29D559C6008DF94F /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8796AD3B29D559C6008DF94F /* Restaurant.swift */; };
+		87FDA12929F833460016FB83 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 87FDA12729F833460016FB83 /* Nunito-Bold.ttf */; };
+		87FDA12A29F833460016FB83 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 87FDA12829F833460016FB83 /* Nunito-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +58,13 @@
 		309BEBAE29B9AC4B005C34E7 /* SwiftUIPlaygroundUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPlaygroundUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		30BE8CA329C8A90F00289E25 /* SampleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleListView.swift; sourceTree = "<group>"; };
 		8759980829E15DF9002949FB /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		875AF0B729FF52370056021D /* UIColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
+		876702C12A015773004D8208 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		876A74AF29E5ABE200A46C8C /* RestaurantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailView.swift; sourceTree = "<group>"; };
 		8796AD3B29D559C6008DF94F /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		87FDA12629F831820016FB83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		87FDA12729F833460016FB83 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nunito-Bold.ttf"; path = "../Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		87FDA12829F833460016FB83 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nunito-Regular.ttf"; path = "../Nunito-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,9 +125,10 @@
 		309BEB9029B9AC46005C34E7 /* SwiftUIPlayground */ = {
 			isa = PBXGroup;
 			children = (
-				8796AD3A29D559A9008DF94F /* model */,
-				8796AD3929D559A0008DF94F /* view */,
-				3009E26D29C0B9440068F7C9 /* TodoList */,
+				875AF0B629FF52120056021D /* Extensions */,
+				8712F77D29FCF57F007A4222 /* FoodPin */,
+				87FDA12629F831820016FB83 /* Info.plist */,
+				87FDA12229F82FE30016FB83 /* Resources */,
 				309BEB9129B9AC46005C34E7 /* SwiftUIPlaygroundApp.swift */,
 				309BEB9529B9AC4A005C34E7 /* Assets.xcassets */,
 				309BEB9729B9AC4A005C34E7 /* Preview Content */,
@@ -151,12 +161,31 @@
 			path = SwiftUIPlaygroundUITests;
 			sourceTree = "<group>";
 		};
+		8712F77D29FCF57F007A4222 /* FoodPin */ = {
+			isa = PBXGroup;
+			children = (
+				3009E26D29C0B9440068F7C9 /* TodoList */,
+				8796AD3A29D559A9008DF94F /* model */,
+				8796AD3929D559A0008DF94F /* view */,
+			);
+			path = FoodPin;
+			sourceTree = "<group>";
+		};
+		875AF0B629FF52120056021D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				875AF0B729FF52370056021D /* UIColorExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		8796AD3929D559A0008DF94F /* view */ = {
 			isa = PBXGroup;
 			children = (
 				307F595E29CB4BAE00016F43 /* RestaurantListView.swift */,
 				8759980829E15DF9002949FB /* ActivityView.swift */,
 				876A74AF29E5ABE200A46C8C /* RestaurantDetailView.swift */,
+				876702C12A015773004D8208 /* MapView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -167,6 +196,23 @@
 				8796AD3B29D559C6008DF94F /* Restaurant.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		87FDA12229F82FE30016FB83 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				87FDA12329F830110016FB83 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		87FDA12329F830110016FB83 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				87FDA12729F833460016FB83 /* Nunito-Bold.ttf */,
+				87FDA12829F833460016FB83 /* Nunito-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +320,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				309BEB9929B9AC4A005C34E7 /* Preview Assets.xcassets in Resources */,
+				87FDA12929F833460016FB83 /* Nunito-Bold.ttf in Resources */,
+				87FDA12A29F833460016FB83 /* Nunito-Regular.ttf in Resources */,
 				309BEB9629B9AC4A005C34E7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,8 +351,10 @@
 				307636B129C570DA00239DB0 /* ImpressViewWithAdapterLayout.swift in Sources */,
 				8796AD3C29D559C6008DF94F /* Restaurant.swift in Sources */,
 				309BEB9429B9AC46005C34E7 /* GuessMovieView.swift in Sources */,
+				875AF0B829FF52370056021D /* UIColorExt.swift in Sources */,
 				876A74B029E5ABE200A46C8C /* RestaurantDetailView.swift in Sources */,
 				8759980929E15DF9002949FB /* ActivityView.swift in Sources */,
+				876702C22A015773004D8208 /* MapView.swift in Sources */,
 				307F595F29CB4BAE00016F43 /* RestaurantListView.swift in Sources */,
 				309BEB9229B9AC46005C34E7 /* SwiftUIPlaygroundApp.swift in Sources */,
 			);
@@ -467,6 +517,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIPlayground/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIPlayground/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -495,6 +546,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIPlayground/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIPlayground/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
