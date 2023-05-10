@@ -17,6 +17,7 @@
 		309BEBAD29B9AC4B005C34E7 /* SwiftUIPlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309BEBAC29B9AC4B005C34E7 /* SwiftUIPlaygroundUITests.swift */; };
 		309BEBAF29B9AC4B005C34E7 /* SwiftUIPlaygroundUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309BEBAE29B9AC4B005C34E7 /* SwiftUIPlaygroundUITestsLaunchTests.swift */; };
 		30BE8CA429C8A90F00289E25 /* SampleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BE8CA329C8A90F00289E25 /* SampleListView.swift */; };
+		871D0CC52A0BE14C00352159 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871D0CC42A0BE14C00352159 /* ReviewView.swift */; };
 		8759980929E15DF9002949FB /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8759980829E15DF9002949FB /* ActivityView.swift */; };
 		875AF0B829FF52370056021D /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875AF0B729FF52370056021D /* UIColorExt.swift */; };
 		876702C22A015773004D8208 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876702C12A015773004D8208 /* MapView.swift */; };
@@ -58,6 +59,7 @@
 		309BEBAC29B9AC4B005C34E7 /* SwiftUIPlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPlaygroundUITests.swift; sourceTree = "<group>"; };
 		309BEBAE29B9AC4B005C34E7 /* SwiftUIPlaygroundUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPlaygroundUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		30BE8CA329C8A90F00289E25 /* SampleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleListView.swift; sourceTree = "<group>"; };
+		871D0CC42A0BE14C00352159 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
 		8759980829E15DF9002949FB /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		875AF0B729FF52370056021D /* UIColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
 		876702C12A015773004D8208 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 				8759980829E15DF9002949FB /* ActivityView.swift */,
 				876A74AF29E5ABE200A46C8C /* RestaurantDetailView.swift */,
 				876702C12A015773004D8208 /* MapView.swift */,
+				871D0CC42A0BE14C00352159 /* ReviewView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				307636B129C570DA00239DB0 /* ImpressViewWithAdapterLayout.swift in Sources */,
 				8796AD3C29D559C6008DF94F /* Restaurant.swift in Sources */,
 				309BEB9429B9AC46005C34E7 /* GuessMovieView.swift in Sources */,
+				871D0CC52A0BE14C00352159 /* ReviewView.swift in Sources */,
 				875AF0B829FF52370056021D /* UIColorExt.swift in Sources */,
 				876A74B029E5ABE200A46C8C /* RestaurantDetailView.swift in Sources */,
 				8759980929E15DF9002949FB /* ActivityView.swift in Sources */,
