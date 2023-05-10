@@ -95,14 +95,15 @@ struct RestaurantDetailView: View {
         }
         .navigationBarBackButtonHidden(true)
         .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
-                Button(action: {
-                    dismiss()
-                }) {
-                    Text("\(Image(systemName: "chevron.left")) \(restaurant.name)")
+            if(!showReview) {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button(action: {
+                        dismiss()
+                    }) {
+                        Text("\(Image(systemName: "chevron.left")) \(restaurant.name)")
+                    }
                 }
             }
-        
         }
         .ignoresSafeArea()
         .overlay {
