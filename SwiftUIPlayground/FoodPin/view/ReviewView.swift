@@ -56,6 +56,10 @@ struct ReviewView: View {
                         isShowRatings.toggle()
                     }
                     .animation(.easeOut.delay(delay), value: isShowRatings)
+                    .onTapGesture {
+                        self.restaurant.rating = rating
+//                        self.isDisplayed = false
+                    }
                 }
             }
         }

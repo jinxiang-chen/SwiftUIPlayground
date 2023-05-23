@@ -38,18 +38,29 @@ struct RestaurantDetailView: View {
                                         .padding([.top, .trailing], 20)
                                     .foregroundColor(.white)
                             }
-                            VStack(alignment: .leading, spacing: 5) {
-                                Text(restaurant.name)
-                                    .font(.custom("Nunito-Regular", size: 35, relativeTo: .largeTitle))
-                                    .bold()
-                                Text(restaurant.type)
-                                    .font(.system(.headline, design: .rounded))
-                                    .padding(.all, 5)
-                                    .background(Color.black)
+                            HStack(alignment: .bottom) {
+                                VStack(alignment: .leading, spacing: 5) {
+                                    Text(restaurant.name)
+                                        .font(.custom("Nunito-Regular", size: 35, relativeTo: .largeTitle))
+                                        .bold()
+                                    Text(restaurant.type)
+                                        .font(.system(.headline, design: .rounded))
+                                        .padding(.all, 5)
+                                        .background(Color.black)
+                                }
+                                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .bottomLeading)
+                                .foregroundColor(.white)
+                                .padding()
+                                
+                                if let rating = restaurant.rating, !showReview {
+                                    Image(rating.image)
+                                        .resizable()
+                                        .frame(width: 60, height: 60)
+                                        .padding([.bottom, .trailing])
+                                        .transition(.scale)
+                                }
                             }
-                            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .bottomLeading)
-                            .foregroundColor(.white)
-                            .padding()
+                          
                         }
                     }
                 Text(restaurant.description)
@@ -123,6 +134,6 @@ struct RestaurantDetailView_Previews: PreviewProvider {
         RestaurantDetailView(
             restaurant: restaurant
         )
-        .environment(\.dynamicTypeSize, .xLarge)
+        .previewDevice("iPhone 12 Pro")
     }
 }

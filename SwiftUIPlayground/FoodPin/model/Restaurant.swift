@@ -7,15 +7,45 @@
 
 import Foundation
 
-struct Restaurant: Identifiable {
-    var id = UUID()
-    var name: String = ""
-    var type: String = ""
-    var location: String = ""
-    var phone: String = ""
-    var description: String = "" 
-    var image: String = ""
-    var isFavorite: Bool = false
+class Restaurant: Identifiable, ObservableObject {
+    init(
+        name: String,
+        type: String,
+        location: String,
+        phone: String,
+        description: String,
+        image: String,
+        isFavorite: Bool = false,
+        rating: Rating? = nil
+    ){
+        self.id = UUID()
+        self.name = name
+        self.type = type
+        self.location = location
+        self.phone = phone
+        self.description = description
+        self.image = image
+        self.isFavorite = isFavorite
+        self.rating = rating
+    }
+    @Published
+    var id: UUID
+    @Published
+    var name: String
+    @Published
+    var type: String
+    @Published
+    var location: String
+    @Published
+    var phone: String
+    @Published
+    var description: String
+    @Published
+    var image: String
+    @Published
+    var isFavorite: Bool
+    @Published
+    var rating: Rating?
     
     enum Rating: String, CaseIterable {
         

@@ -24,6 +24,10 @@
 		876702C42A01620C004D8208 /* AnnotatedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876702C32A01620C004D8208 /* AnnotatedItem.swift */; };
 		876A74B029E5ABE200A46C8C /* RestaurantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A74AF29E5ABE200A46C8C /* RestaurantDetailView.swift */; };
 		8796AD3C29D559C6008DF94F /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8796AD3B29D559C6008DF94F /* Restaurant.swift */; };
+		87D945572A151BDE00994186 /* NewRestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D945562A151BDE00994186 /* NewRestaurantView.swift */; };
+		87D945592A15224500994186 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D945582A15224500994186 /* FormTextField.swift */; };
+		87D9455B2A152A2C00994186 /* PhotoSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D9455A2A152A2C00994186 /* PhotoSource.swift */; };
+		87D9455E2A152CCE00994186 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D9455D2A152CCE00994186 /* ImagePicker.swift */; };
 		87FDA12929F833460016FB83 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 87FDA12729F833460016FB83 /* Nunito-Bold.ttf */; };
 		87FDA12A29F833460016FB83 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 87FDA12829F833460016FB83 /* Nunito-Regular.ttf */; };
 /* End PBXBuildFile section */
@@ -66,6 +70,10 @@
 		876702C32A01620C004D8208 /* AnnotatedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotatedItem.swift; sourceTree = "<group>"; };
 		876A74AF29E5ABE200A46C8C /* RestaurantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailView.swift; sourceTree = "<group>"; };
 		8796AD3B29D559C6008DF94F /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		87D945562A151BDE00994186 /* NewRestaurantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRestaurantView.swift; sourceTree = "<group>"; };
+		87D945582A15224500994186 /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
+		87D9455A2A152A2C00994186 /* PhotoSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSource.swift; sourceTree = "<group>"; };
+		87D9455D2A152CCE00994186 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		87FDA12629F831820016FB83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		87FDA12729F833460016FB83 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nunito-Bold.ttf"; path = "../Nunito-Bold.ttf"; sourceTree = "<group>"; };
 		87FDA12829F833460016FB83 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nunito-Regular.ttf"; path = "../Nunito-Regular.ttf"; sourceTree = "<group>"; };
@@ -168,6 +176,7 @@
 		8712F77D29FCF57F007A4222 /* FoodPin */ = {
 			isa = PBXGroup;
 			children = (
+				87D9455C2A152CB000994186 /* util */,
 				3009E26D29C0B9440068F7C9 /* TodoList */,
 				8796AD3A29D559A9008DF94F /* model */,
 				8796AD3929D559A0008DF94F /* view */,
@@ -191,6 +200,8 @@
 				876A74AF29E5ABE200A46C8C /* RestaurantDetailView.swift */,
 				876702C12A015773004D8208 /* MapView.swift */,
 				871D0CC42A0BE14C00352159 /* ReviewView.swift */,
+				87D945562A151BDE00994186 /* NewRestaurantView.swift */,
+				87D945582A15224500994186 /* FormTextField.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -200,8 +211,17 @@
 			children = (
 				8796AD3B29D559C6008DF94F /* Restaurant.swift */,
 				876702C32A01620C004D8208 /* AnnotatedItem.swift */,
+				87D9455A2A152A2C00994186 /* PhotoSource.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		87D9455C2A152CB000994186 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				87D9455D2A152CCE00994186 /* ImagePicker.swift */,
+			);
+			path = util;
 			sourceTree = "<group>";
 		};
 		87FDA12229F82FE30016FB83 /* Resources */ = {
@@ -356,14 +376,18 @@
 				30BE8CA429C8A90F00289E25 /* SampleListView.swift in Sources */,
 				307636B129C570DA00239DB0 /* ImpressViewWithAdapterLayout.swift in Sources */,
 				8796AD3C29D559C6008DF94F /* Restaurant.swift in Sources */,
+				87D945592A15224500994186 /* FormTextField.swift in Sources */,
 				309BEB9429B9AC46005C34E7 /* GuessMovieView.swift in Sources */,
 				871D0CC52A0BE14C00352159 /* ReviewView.swift in Sources */,
 				875AF0B829FF52370056021D /* UIColorExt.swift in Sources */,
+				87D945572A151BDE00994186 /* NewRestaurantView.swift in Sources */,
 				876A74B029E5ABE200A46C8C /* RestaurantDetailView.swift in Sources */,
 				8759980929E15DF9002949FB /* ActivityView.swift in Sources */,
 				876702C22A015773004D8208 /* MapView.swift in Sources */,
 				307F595F29CB4BAE00016F43 /* RestaurantListView.swift in Sources */,
 				309BEB9229B9AC46005C34E7 /* SwiftUIPlaygroundApp.swift in Sources */,
+				87D9455E2A152CCE00994186 /* ImagePicker.swift in Sources */,
+				87D9455B2A152A2C00994186 /* PhotoSource.swift in Sources */,
 				876702C42A01620C004D8208 /* AnnotatedItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
