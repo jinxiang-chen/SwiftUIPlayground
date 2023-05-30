@@ -18,6 +18,11 @@
 		309BEBAF29B9AC4B005C34E7 /* SwiftUIPlaygroundUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309BEBAE29B9AC4B005C34E7 /* SwiftUIPlaygroundUITestsLaunchTests.swift */; };
 		30BE8CA429C8A90F00289E25 /* SampleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BE8CA329C8A90F00289E25 /* SampleListView.swift */; };
 		871D0CC52A0BE14C00352159 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871D0CC42A0BE14C00352159 /* ReviewView.swift */; };
+		872C356B2A26536F00CAF386 /* RestaurantFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872C356A2A26536F00CAF386 /* RestaurantFormViewModel.swift */; };
+		873455BA2A24FCEF00618042 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873455B92A24FCEF00618042 /* PersistenceController.swift */; };
+		873455C12A250DE600618042 /* FoodPin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 873455BF2A250DE600618042 /* FoodPin.xcdatamodeld */; };
+		873455C22A25111100618042 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873455B92A24FCEF00618042 /* PersistenceController.swift */; };
+		873455C32A25111200618042 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873455B92A24FCEF00618042 /* PersistenceController.swift */; };
 		8759980929E15DF9002949FB /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8759980829E15DF9002949FB /* ActivityView.swift */; };
 		875AF0B829FF52370056021D /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875AF0B729FF52370056021D /* UIColorExt.swift */; };
 		876702C22A015773004D8208 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876702C12A015773004D8208 /* MapView.swift */; };
@@ -64,6 +69,9 @@
 		309BEBAE29B9AC4B005C34E7 /* SwiftUIPlaygroundUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPlaygroundUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		30BE8CA329C8A90F00289E25 /* SampleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleListView.swift; sourceTree = "<group>"; };
 		871D0CC42A0BE14C00352159 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
+		872C356A2A26536F00CAF386 /* RestaurantFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantFormViewModel.swift; sourceTree = "<group>"; };
+		873455B92A24FCEF00618042 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		873455C02A250DE600618042 /* FoodPin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodPin.xcdatamodel; sourceTree = "<group>"; };
 		8759980829E15DF9002949FB /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		875AF0B729FF52370056021D /* UIColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
 		876702C12A015773004D8208 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -176,12 +184,30 @@
 		8712F77D29FCF57F007A4222 /* FoodPin */ = {
 			isa = PBXGroup;
 			children = (
+				872C35692A26534000CAF386 /* viewmodel */,
 				87D9455C2A152CB000994186 /* util */,
 				3009E26D29C0B9440068F7C9 /* TodoList */,
 				8796AD3A29D559A9008DF94F /* model */,
 				8796AD3929D559A0008DF94F /* view */,
 			);
 			path = FoodPin;
+			sourceTree = "<group>";
+		};
+		872C35692A26534000CAF386 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				872C356A2A26536F00CAF386 /* RestaurantFormViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		873455BE2A25015900618042 /* db */ = {
+			isa = PBXGroup;
+			children = (
+				873455BF2A250DE600618042 /* FoodPin.xcdatamodeld */,
+				8796AD3B29D559C6008DF94F /* Restaurant.swift */,
+			);
+			path = db;
 			sourceTree = "<group>";
 		};
 		875AF0B629FF52120056021D /* Extensions */ = {
@@ -209,9 +235,10 @@
 		8796AD3A29D559A9008DF94F /* model */ = {
 			isa = PBXGroup;
 			children = (
-				8796AD3B29D559C6008DF94F /* Restaurant.swift */,
+				873455BE2A25015900618042 /* db */,
 				876702C32A01620C004D8208 /* AnnotatedItem.swift */,
 				87D9455A2A152A2C00994186 /* PhotoSource.swift */,
+				873455B92A24FCEF00618042 /* PersistenceController.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -378,11 +405,14 @@
 				8796AD3C29D559C6008DF94F /* Restaurant.swift in Sources */,
 				87D945592A15224500994186 /* FormTextField.swift in Sources */,
 				309BEB9429B9AC46005C34E7 /* GuessMovieView.swift in Sources */,
+				872C356B2A26536F00CAF386 /* RestaurantFormViewModel.swift in Sources */,
 				871D0CC52A0BE14C00352159 /* ReviewView.swift in Sources */,
 				875AF0B829FF52370056021D /* UIColorExt.swift in Sources */,
+				873455C12A250DE600618042 /* FoodPin.xcdatamodeld in Sources */,
 				87D945572A151BDE00994186 /* NewRestaurantView.swift in Sources */,
 				876A74B029E5ABE200A46C8C /* RestaurantDetailView.swift in Sources */,
 				8759980929E15DF9002949FB /* ActivityView.swift in Sources */,
+				873455BA2A24FCEF00618042 /* PersistenceController.swift in Sources */,
 				876702C22A015773004D8208 /* MapView.swift in Sources */,
 				307F595F29CB4BAE00016F43 /* RestaurantListView.swift in Sources */,
 				309BEB9229B9AC46005C34E7 /* SwiftUIPlaygroundApp.swift in Sources */,
@@ -397,6 +427,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				309BEBA329B9AC4B005C34E7 /* SwiftUIPlaygroundTests.swift in Sources */,
+				873455C22A25111100618042 /* PersistenceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +435,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				873455C32A25111200618042 /* PersistenceController.swift in Sources */,
 				309BEBAD29B9AC4B005C34E7 /* SwiftUIPlaygroundUITests.swift in Sources */,
 				309BEBAF29B9AC4B005C34E7 /* SwiftUIPlaygroundUITestsLaunchTests.swift in Sources */,
 			);
@@ -709,6 +741,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		873455BF2A250DE600618042 /* FoodPin.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				873455C02A250DE600618042 /* FoodPin.xcdatamodel */,
+			);
+			currentVersion = 873455C02A250DE600618042 /* FoodPin.xcdatamodel */;
+			path = FoodPin.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 309BEB8629B9AC46005C34E7 /* Project object */;
 }

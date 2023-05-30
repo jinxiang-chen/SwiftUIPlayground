@@ -9,14 +9,17 @@ import SwiftUI
 
 @main
 struct SwiftUIPlaygroundApp: App {
+    
+    let persistenceController = PersistenceController.shared
+    
     var body: some Scene {
         WindowGroup {
             RestaurantListView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
     
     init() {
-        UIColor()
         let navBarAppearance = UINavigationBarAppearance()
         navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor(named: "NavigationBarTitle"), .font: UIFont(name: "ArialRoundedMTBlod", size: 35) ?? UIFont.systemFont(ofSize: 35)]
         navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor(named: "NavigationBarTitle"), .font: UIFont(name: "ArialRoundedMTBlod", size: 20) ?? UIFont.systemFont(ofSize: 20)]
