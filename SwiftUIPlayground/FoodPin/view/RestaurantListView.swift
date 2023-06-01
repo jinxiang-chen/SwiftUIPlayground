@@ -11,6 +11,7 @@ struct RestaurantListView: View {
         sortDescriptors: []
     )
     var restaurants: FetchedResults<Restaurant>
+    @State private var searchText = ""
     
     var body: some View {
         NavigationStack {
@@ -69,9 +70,26 @@ struct RestaurantListView: View {
                 .accentColor(.primary)
             }
         }
-        .accentColor(.white)
         .sheet(isPresented: $showNewRestaurant) {
             NewRestaurantView()
+        }
+        .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always),prompt: "Search restaurants...") {
+            Text("Thai")
+                .foregroundColor(.primary)
+                .searchCompletion("Thai")
+            Text("Cafe")
+                .foregroundColor(.primary)
+                .searchCompletion("Cafe")
+        }
+        .accentColor(.primary)
+        .onChange(of: searchText) { searchText in
+            let predicate1 = NSPredicate(format: "name CONTAINS %@ ", searchText)
+            let predicate2 = NSPredicate(format: "location CONTAINS %@ ", searchText)
+            let predicateCompound = NSCompoundPredicate.init(type: .or, subpredicates: [predicate1,predicate2])
+            let predicate = searchText.isEmpty ? NSPredicate(value: true) : predicateCompound
+          
+            restaurants.nsPredicate = predicate
+            
         }
     }
     
