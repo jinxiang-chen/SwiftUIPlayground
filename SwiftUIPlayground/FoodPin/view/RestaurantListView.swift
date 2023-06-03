@@ -12,7 +12,8 @@ struct RestaurantListView: View {
     )
     var restaurants: FetchedResults<Restaurant>
     @State private var searchText = ""
-    
+    @State private var showWalkthrough = false
+    @AppStorage("hasViewedWalkthrough") var hasViewedWalkthrough: Bool = false
     var body: some View {
         NavigationStack {
             List {
@@ -73,6 +74,9 @@ struct RestaurantListView: View {
         .sheet(isPresented: $showNewRestaurant) {
             NewRestaurantView()
         }
+        .sheet(isPresented: $showWalkthrough){
+            TutorialView()
+        }
         .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always),prompt: "Search restaurants...") {
             Text("Thai")
                 .foregroundColor(.primary)
@@ -90,6 +94,9 @@ struct RestaurantListView: View {
           
             restaurants.nsPredicate = predicate
             
+        }
+        .onAppear {
+            showWalkthrough = hasViewedWalkthrough ? false : true
         }
     }
     
