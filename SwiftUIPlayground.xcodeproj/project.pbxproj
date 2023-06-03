@@ -28,6 +28,9 @@
 		876702C22A015773004D8208 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876702C12A015773004D8208 /* MapView.swift */; };
 		876702C42A01620C004D8208 /* AnnotatedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876702C32A01620C004D8208 /* AnnotatedItem.swift */; };
 		876A74B029E5ABE200A46C8C /* RestaurantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A74AF29E5ABE200A46C8C /* RestaurantDetailView.swift */; };
+		878328852A2B12D500F124DB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878328842A2B12D500F124DB /* MainView.swift */; };
+		878328932A2B21A400F124DB /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878328922A2B21A400F124DB /* TutorialView.swift */; };
+		878328962A2B21DA00F124DB /* TutorialPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878328952A2B21DA00F124DB /* TutorialPage.swift */; };
 		8796AD3C29D559C6008DF94F /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8796AD3B29D559C6008DF94F /* Restaurant.swift */; };
 		87D945572A151BDE00994186 /* NewRestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D945562A151BDE00994186 /* NewRestaurantView.swift */; };
 		87D945592A15224500994186 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D945582A15224500994186 /* FormTextField.swift */; };
@@ -77,6 +80,9 @@
 		876702C12A015773004D8208 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		876702C32A01620C004D8208 /* AnnotatedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotatedItem.swift; sourceTree = "<group>"; };
 		876A74AF29E5ABE200A46C8C /* RestaurantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailView.swift; sourceTree = "<group>"; };
+		878328842A2B12D500F124DB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		878328922A2B21A400F124DB /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
+		878328952A2B21DA00F124DB /* TutorialPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPage.swift; sourceTree = "<group>"; };
 		8796AD3B29D559C6008DF94F /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		87D945562A151BDE00994186 /* NewRestaurantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRestaurantView.swift; sourceTree = "<group>"; };
 		87D945582A15224500994186 /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
@@ -149,7 +155,6 @@
 				8712F77D29FCF57F007A4222 /* FoodPin */,
 				87FDA12629F831820016FB83 /* Info.plist */,
 				87FDA12229F82FE30016FB83 /* Resources */,
-				309BEB9129B9AC46005C34E7 /* SwiftUIPlaygroundApp.swift */,
 				309BEB9529B9AC4A005C34E7 /* Assets.xcassets */,
 				309BEB9729B9AC4A005C34E7 /* Preview Content */,
 			);
@@ -218,9 +223,20 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		878328942A2B21CB00F124DB /* tutoral */ = {
+			isa = PBXGroup;
+			children = (
+				878328922A2B21A400F124DB /* TutorialView.swift */,
+				878328952A2B21DA00F124DB /* TutorialPage.swift */,
+			);
+			path = tutoral;
+			sourceTree = "<group>";
+		};
 		8796AD3929D559A0008DF94F /* view */ = {
 			isa = PBXGroup;
 			children = (
+				878328942A2B21CB00F124DB /* tutoral */,
+				309BEB9129B9AC46005C34E7 /* SwiftUIPlaygroundApp.swift */,
 				307F595E29CB4BAE00016F43 /* RestaurantListView.swift */,
 				8759980829E15DF9002949FB /* ActivityView.swift */,
 				876A74AF29E5ABE200A46C8C /* RestaurantDetailView.swift */,
@@ -228,6 +244,7 @@
 				871D0CC42A0BE14C00352159 /* ReviewView.swift */,
 				87D945562A151BDE00994186 /* NewRestaurantView.swift */,
 				87D945582A15224500994186 /* FormTextField.swift */,
+				878328842A2B12D500F124DB /* MainView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -402,6 +419,7 @@
 			files = (
 				30BE8CA429C8A90F00289E25 /* SampleListView.swift in Sources */,
 				307636B129C570DA00239DB0 /* ImpressViewWithAdapterLayout.swift in Sources */,
+				878328962A2B21DA00F124DB /* TutorialPage.swift in Sources */,
 				8796AD3C29D559C6008DF94F /* Restaurant.swift in Sources */,
 				87D945592A15224500994186 /* FormTextField.swift in Sources */,
 				309BEB9429B9AC46005C34E7 /* GuessMovieView.swift in Sources */,
@@ -413,6 +431,8 @@
 				876A74B029E5ABE200A46C8C /* RestaurantDetailView.swift in Sources */,
 				8759980929E15DF9002949FB /* ActivityView.swift in Sources */,
 				873455BA2A24FCEF00618042 /* PersistenceController.swift in Sources */,
+				878328852A2B12D500F124DB /* MainView.swift in Sources */,
+				878328932A2B21A400F124DB /* TutorialView.swift in Sources */,
 				876702C22A015773004D8208 /* MapView.swift in Sources */,
 				307F595F29CB4BAE00016F43 /* RestaurantListView.swift in Sources */,
 				309BEB9229B9AC46005C34E7 /* SwiftUIPlaygroundApp.swift in Sources */,
@@ -582,9 +602,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftUIPlayground/Info.plist;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "You need grant the app access to your camera in order to take photos";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "You need grant the app access to your photo library so you can pick your favorite restaurant photo.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -611,9 +631,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftUIPlayground/Info.plist;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "You need grant the app access to your camera in order to take photos";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "You need grant the app access to your photo library so you can pick your favorite restaurant photo.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
