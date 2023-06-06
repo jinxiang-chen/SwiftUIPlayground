@@ -23,6 +23,10 @@
 		873455C12A250DE600618042 /* FoodPin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 873455BF2A250DE600618042 /* FoodPin.xcdatamodeld */; };
 		873455C22A25111100618042 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873455B92A24FCEF00618042 /* PersistenceController.swift */; };
 		873455C32A25111200618042 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873455B92A24FCEF00618042 /* PersistenceController.swift */; };
+		87505ACA2A2F647200960A40 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87505AC92A2F647200960A40 /* AboutView.swift */; };
+		87505ACD2A2F68D500960A40 /* WeblLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87505ACC2A2F68D500960A40 /* WeblLink.swift */; };
+		87505ACF2A2F8AEA00960A40 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87505ACE2A2F8AEA00960A40 /* WebView.swift */; };
+		87505AD22A2F8DA300960A40 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87505AD12A2F8DA300960A40 /* SafariView.swift */; };
 		8759980929E15DF9002949FB /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8759980829E15DF9002949FB /* ActivityView.swift */; };
 		875AF0B829FF52370056021D /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875AF0B729FF52370056021D /* UIColorExt.swift */; };
 		876702C22A015773004D8208 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876702C12A015773004D8208 /* MapView.swift */; };
@@ -75,6 +79,10 @@
 		872C356A2A26536F00CAF386 /* RestaurantFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantFormViewModel.swift; sourceTree = "<group>"; };
 		873455B92A24FCEF00618042 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		873455C02A250DE600618042 /* FoodPin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodPin.xcdatamodel; sourceTree = "<group>"; };
+		87505AC92A2F647200960A40 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		87505ACC2A2F68D500960A40 /* WeblLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeblLink.swift; sourceTree = "<group>"; };
+		87505ACE2A2F8AEA00960A40 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		87505AD12A2F8DA300960A40 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		8759980829E15DF9002949FB /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		875AF0B729FF52370056021D /* UIColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
 		876702C12A015773004D8208 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -215,6 +223,32 @@
 			path = db;
 			sourceTree = "<group>";
 		};
+		87505AC82A2F642200960A40 /* about */ = {
+			isa = PBXGroup;
+			children = (
+				87505ACB2A2F688400960A40 /* data */,
+				87505AC92A2F647200960A40 /* AboutView.swift */,
+			);
+			path = about;
+			sourceTree = "<group>";
+		};
+		87505ACB2A2F688400960A40 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				87505ACC2A2F68D500960A40 /* WeblLink.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		87505AD02A2F8BDC00960A40 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				87505AD12A2F8DA300960A40 /* SafariView.swift */,
+				87505ACE2A2F8AEA00960A40 /* WebView.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
 		875AF0B629FF52120056021D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +269,8 @@
 		8796AD3929D559A0008DF94F /* view */ = {
 			isa = PBXGroup;
 			children = (
+				87505AD02A2F8BDC00960A40 /* common */,
+				87505AC82A2F642200960A40 /* about */,
 				878328942A2B21CB00F124DB /* tutoral */,
 				309BEB9129B9AC46005C34E7 /* SwiftUIPlaygroundApp.swift */,
 				307F595E29CB4BAE00016F43 /* RestaurantListView.swift */,
@@ -418,6 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30BE8CA429C8A90F00289E25 /* SampleListView.swift in Sources */,
+				87505AD22A2F8DA300960A40 /* SafariView.swift in Sources */,
 				307636B129C570DA00239DB0 /* ImpressViewWithAdapterLayout.swift in Sources */,
 				878328962A2B21DA00F124DB /* TutorialPage.swift in Sources */,
 				8796AD3C29D559C6008DF94F /* Restaurant.swift in Sources */,
@@ -428,11 +465,14 @@
 				875AF0B829FF52370056021D /* UIColorExt.swift in Sources */,
 				873455C12A250DE600618042 /* FoodPin.xcdatamodeld in Sources */,
 				87D945572A151BDE00994186 /* NewRestaurantView.swift in Sources */,
+				87505ACF2A2F8AEA00960A40 /* WebView.swift in Sources */,
 				876A74B029E5ABE200A46C8C /* RestaurantDetailView.swift in Sources */,
 				8759980929E15DF9002949FB /* ActivityView.swift in Sources */,
+				87505ACA2A2F647200960A40 /* AboutView.swift in Sources */,
 				873455BA2A24FCEF00618042 /* PersistenceController.swift in Sources */,
 				878328852A2B12D500F124DB /* MainView.swift in Sources */,
 				878328932A2B21A400F124DB /* TutorialView.swift in Sources */,
+				87505ACD2A2F68D500960A40 /* WeblLink.swift in Sources */,
 				876702C22A015773004D8208 /* MapView.swift in Sources */,
 				307F595F29CB4BAE00016F43 /* RestaurantListView.swift in Sources */,
 				309BEB9229B9AC46005C34E7 /* SwiftUIPlaygroundApp.swift in Sources */,
