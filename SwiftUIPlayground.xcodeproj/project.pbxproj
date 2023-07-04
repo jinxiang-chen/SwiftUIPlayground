@@ -36,6 +36,7 @@
 		878328932A2B21A400F124DB /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878328922A2B21A400F124DB /* TutorialView.swift */; };
 		878328962A2B21DA00F124DB /* TutorialPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878328952A2B21DA00F124DB /* TutorialPage.swift */; };
 		8796AD3C29D559C6008DF94F /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8796AD3B29D559C6008DF94F /* Restaurant.swift */; };
+		87B02EEE2A5475AA0090F901 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 87B02EEC2A5475AA0090F901 /* Localizable.strings */; };
 		87D945572A151BDE00994186 /* NewRestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D945562A151BDE00994186 /* NewRestaurantView.swift */; };
 		87D945592A15224500994186 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D945582A15224500994186 /* FormTextField.swift */; };
 		87D9455B2A152A2C00994186 /* PhotoSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D9455A2A152A2C00994186 /* PhotoSource.swift */; };
@@ -92,6 +93,7 @@
 		878328922A2B21A400F124DB /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
 		878328952A2B21DA00F124DB /* TutorialPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPage.swift; sourceTree = "<group>"; };
 		8796AD3B29D559C6008DF94F /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		87B02EED2A5475AA0090F901 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		87D945562A151BDE00994186 /* NewRestaurantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRestaurantView.swift; sourceTree = "<group>"; };
 		87D945582A15224500994186 /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
 		87D9455A2A152A2C00994186 /* PhotoSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSource.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				875AF0B629FF52120056021D /* Extensions */,
 				8712F77D29FCF57F007A4222 /* FoodPin */,
 				87FDA12629F831820016FB83 /* Info.plist */,
+				87B02EEC2A5475AA0090F901 /* Localizable.strings */,
 				87FDA12229F82FE30016FB83 /* Resources */,
 				309BEB9529B9AC4A005C34E7 /* Assets.xcassets */,
 				309BEB9729B9AC4A005C34E7 /* Preview Content */,
@@ -406,6 +409,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hant",
 				Base,
 			);
 			mainGroup = 309BEB8529B9AC46005C34E7;
@@ -425,6 +429,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87B02EEE2A5475AA0090F901 /* Localizable.strings in Resources */,
 				309BEB9929B9AC4A005C34E7 /* Preview Assets.xcassets in Resources */,
 				87FDA12929F833460016FB83 /* Nunito-Bold.ttf in Resources */,
 				87FDA12A29F833460016FB83 /* Nunito-Regular.ttf in Resources */,
@@ -515,6 +520,17 @@
 			targetProxy = 309BEBA929B9AC4B005C34E7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		87B02EEC2A5475AA0090F901 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87B02EED2A5475AA0090F901 /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		309BEBB029B9AC4B005C34E7 /* Debug */ = {
