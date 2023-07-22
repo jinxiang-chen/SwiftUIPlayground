@@ -98,6 +98,9 @@ struct RestaurantListView: View {
         .onAppear {
             showWalkthrough = hasViewedWalkthrough ? false : true
         }
+        .task {
+            prepareNotification()
+        }
     }
     
     private func deleteRecord(indexSet: IndexSet) {
@@ -113,6 +116,40 @@ struct RestaurantListView: View {
             }
         }
     }
+    
+    private func prepareNotification() {
+        let center = UNUserNotificationCenter.current()
+//        let show = UNNotificationAction(identifier: "show", title: "彼得潘愛心😍", options: .foreground)
+        //Challenge 2
+        
+//        let remindLater = UNNotificationAction(identifier: "remindLater", title: "彼得潘小王子🤓", options: .foreground)
+        
+        //類別通知器
+//        let category = UNNotificationCategory(identifier: "alarm", actions: [show,remindLater], intentIdentifiers: [], options: [])
+        
+        //設定類別選擇器
+//        center.setNotificationCategories([category])
+        if restaurants.count <= 0 {
+            return
+        }
+        let random = Int.random(in: 0..<restaurants.count)
+        let suggestedRestaurant = restaurants[random]
+        let content = UNMutableNotificationContent()
+        content.title = "Restaurant Recommendation"
+        content.subtitle = "Try new food today"
+        content.body = "I recommend you to try \(suggestedRestaurant.name). The food is great!"
+        content.sound = UNNotificationSound.default
+        
+//        content.userInfo = ["customData": "fizzBuzz"]
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
+        
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request)
+        
+        
+    }
+    
 }
 
 struct BasicImageRow: View {

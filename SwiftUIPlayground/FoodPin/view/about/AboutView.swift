@@ -20,7 +20,7 @@ struct AboutView: View {
                 
                 Section {
                     Link(destination: URL(string: WebLink.rateUs.rawValue)!) {
-                        Label(String(localized: "Rate us on App Store", comment: "Rate us on App Store"), image: "store")
+                        Label(String(localized: "Rate us on App Store"), image: "store")
                             .foregroundColor(.primary)
                     }
                     

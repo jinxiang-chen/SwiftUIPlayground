@@ -29,6 +29,7 @@
 		87505AD22A2F8DA300960A40 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87505AD12A2F8DA300960A40 /* SafariView.swift */; };
 		8759980929E15DF9002949FB /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8759980829E15DF9002949FB /* ActivityView.swift */; };
 		875AF0B829FF52370056021D /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875AF0B729FF52370056021D /* UIColorExt.swift */; };
+		8764301D2A698E120037A844 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8764301C2A698E120037A844 /* AppDelegate.swift */; };
 		876702C22A015773004D8208 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876702C12A015773004D8208 /* MapView.swift */; };
 		876702C42A01620C004D8208 /* AnnotatedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876702C32A01620C004D8208 /* AnnotatedItem.swift */; };
 		876A74B029E5ABE200A46C8C /* RestaurantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A74AF29E5ABE200A46C8C /* RestaurantDetailView.swift */; };
@@ -86,9 +87,11 @@
 		87505AD12A2F8DA300960A40 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		8759980829E15DF9002949FB /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		875AF0B729FF52370056021D /* UIColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
+		8764301C2A698E120037A844 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		876702C12A015773004D8208 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		876702C32A01620C004D8208 /* AnnotatedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotatedItem.swift; sourceTree = "<group>"; };
 		876A74AF29E5ABE200A46C8C /* RestaurantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailView.swift; sourceTree = "<group>"; };
+		876E53A62A6BDBB20065F79D /* push.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = push.apns; sourceTree = "<group>"; };
 		878328842A2B12D500F124DB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		878328922A2B21A400F124DB /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
 		878328952A2B21DA00F124DB /* TutorialPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPage.swift; sourceTree = "<group>"; };
@@ -295,6 +298,8 @@
 				876702C32A01620C004D8208 /* AnnotatedItem.swift */,
 				87D9455A2A152A2C00994186 /* PhotoSource.swift */,
 				873455B92A24FCEF00618042 /* PersistenceController.swift */,
+				8764301C2A698E120037A844 /* AppDelegate.swift */,
+				876E53A62A6BDBB20065F79D /* push.apns */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -479,6 +484,7 @@
 				878328932A2B21A400F124DB /* TutorialView.swift in Sources */,
 				87505ACD2A2F68D500960A40 /* WeblLink.swift in Sources */,
 				876702C22A015773004D8208 /* MapView.swift in Sources */,
+				8764301D2A698E120037A844 /* AppDelegate.swift in Sources */,
 				307F595F29CB4BAE00016F43 /* RestaurantListView.swift in Sources */,
 				309BEB9229B9AC46005C34E7 /* SwiftUIPlaygroundApp.swift in Sources */,
 				87D9455E2A152CCE00994186 /* ImagePicker.swift in Sources */,

@@ -1,0 +1,12 @@
+{
+    "Simulator Target Bundle": "fu.SwiftUIPlayground",
+    "aps": {
+        "alert": {
+            "title": "測試推播",
+            "subtitle" : "副標題",
+            "body" : "內容"
+        },
+        "sound": "default",
+        "badge": 666
+    }
+}

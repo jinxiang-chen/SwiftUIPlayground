@@ -12,6 +12,8 @@ struct SwiftUIPlaygroundApp: App {
     
     let persistenceController = PersistenceController.shared
     
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
     var body: some Scene {
         WindowGroup {
             MainView()
@@ -30,4 +32,5 @@ struct SwiftUIPlaygroundApp: App {
         UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearance
         UINavigationBar.appearance().compactAppearance = navBarAppearance
     }
+
 }
