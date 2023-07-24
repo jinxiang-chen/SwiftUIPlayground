@@ -119,18 +119,6 @@ struct RestaurantListView: View {
     
     private func prepareNotification() {
         let center = UNUserNotificationCenter.current()
-//        let show = UNNotificationAction(identifier: "show", title: "彼得潘愛心😍", options: .foreground)
-        //Challenge 2
-        
-//        let remindLater = UNNotificationAction(identifier: "remindLater", title: "彼得潘小王子🤓", options: .foreground)
-        
-        //類別通知器
-//        let category = UNNotificationCategory(identifier: "alarm", actions: [show,remindLater], intentIdentifiers: [], options: [])
-        
-        //設定類別選擇器
-//        center.setNotificationCategories([category])
-        
-        
         
         if restaurants.count <= 0 {
             return
@@ -151,14 +139,21 @@ struct RestaurantListView: View {
                 content.attachments = [restaurantImage]
             }
         }
-        
-            
-//        content.userInfo = ["customData": "fizzBuzz"]
+        // 加入動作按鈕
+        let categoryIdentifier = "restaurant"
+        let laterAction = UNNotificationAction(identifier: "restaurant.cancel", title: "Later", options: [])
+        let makeReservationAction = UNNotificationAction(identifier: "restaurant.makeReservationAction", title: "Reserve a table", options: [.foreground])
+        let category = UNNotificationCategory(identifier: categoryIdentifier, actions: [laterAction, makeReservationAction], intentIdentifiers: [])
+        content.categoryIdentifier = categoryIdentifier
+        center.setNotificationCategories([category])
+        // 加入自定義資料
+        content.userInfo = ["phone": suggestedRestaurant.phone]
+
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
         
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-        UNUserNotificationCenter.current().add(request)
+        center.add(request)
         
         
     }

@@ -142,8 +142,8 @@
             filePath = "SwiftUIPlayground/FoodPin/view/RestaurantListView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "160"
-            endingLineNumber = "160"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
             landmarkName = "prepareNotification()"
             landmarkType = "7">
          </BreakpointContent>
@@ -158,8 +158,8 @@
             filePath = "SwiftUIPlayground/FoodPin/view/RestaurantListView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
             landmarkName = "prepareNotification()"
             landmarkType = "7">
          </BreakpointContent>
