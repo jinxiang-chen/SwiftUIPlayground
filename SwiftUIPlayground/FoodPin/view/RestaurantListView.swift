@@ -129,6 +129,9 @@ struct RestaurantListView: View {
         
         //設定類別選擇器
 //        center.setNotificationCategories([category])
+        
+        
+        
         if restaurants.count <= 0 {
             return
         }
@@ -139,7 +142,17 @@ struct RestaurantListView: View {
         content.subtitle = "Try new food today"
         content.body = "I recommend you to try \(suggestedRestaurant.name). The food is great!"
         content.sound = UNNotificationSound.default
+        // 通知加入圖片
+        let tempDirURL = URL(fileURLWithPath: NSTemporaryDirectory())
+        let tempFileURL = tempDirURL.appendingPathComponent("suggested-restaurant.jpg")
+        if let image = UIImage(data: suggestedRestaurant.image as Data) {
+            try? image.jpegData(compressionQuality: 1.0)?.write(to: tempFileURL)
+            if let restaurantImage = try? UNNotificationAttachment(identifier: "restaurantImage", url: tempFileURL, options: nil) {
+                content.attachments = [restaurantImage]
+            }
+        }
         
+            
 //        content.userInfo = ["customData": "fizzBuzz"]
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
